@@ -30,9 +30,10 @@ h5 {
 .link {
   display: inline-block;
   margin: 0 20px;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
-    monospace;
-  color: rgb(91, 59, 140);
+  font-family: "SF Mono", Menlo, monospace, "SF Pro Icons";
+  /* color: rgb(91, 59, 140); */
+  color: #000000;
+  font-weight: 400;
 }
 
 .grow {
