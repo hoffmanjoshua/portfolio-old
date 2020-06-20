@@ -11,6 +11,8 @@ body {
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #222;
+  color: rgb(221, 221, 221);
 }
 
 h1 {
@@ -22,18 +24,36 @@ h5 {
   margin-top: 5px;
 }
 
+.link > i {
+  margin-right: 5px;
+}
+
 .nu {
-  color: rgb(91, 59, 140);
+  color: rgb(147, 123, 184);
   font-family: "Poppins", sans-serif;
 }
 
+.link-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .link {
-  display: inline-block;
-  margin: 0 20px;
-  font-family: "SF Mono", Menlo, monospace, "SF Pro Icons";
-  /* color: rgb(91, 59, 140); */
-  color: #000000;
-  font-weight: 400;
+  width: 150px;
+  height: 90px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: #111;
+  color: rgb(221, 221, 221);
 }
 
 .grow {
@@ -41,4 +61,20 @@ h5 {
 }
 .grow:hover {
   transform: scale(1.1);
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+
+  .link {
+    background-color: #e3e3e3;
+    color: #222;
+  }
+
+  .nu {
+    color: rgb(78, 42, 132);
+  }
 }
